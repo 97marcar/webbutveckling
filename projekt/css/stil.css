@@ -18,74 +18,104 @@ h1 {
 	color: #777;
 }
 
+a.material-icons:after {
+		content: "";
+		width: 120px;
+		height: 120px;
+		position: absolute;
+		transition: all 0.3s ease;
+}
 
-i.material-icons {
+
+a.material-icons {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
+}
+
+a.material-icons:after {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
 }
 
 
 
-i.material-icons:hover:after {
+a.material-icons:hover:after {
 	transform: scale(1);
 	box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
 }
 
 
 
-i.btn1 {
+a.btn1 {
 	background-color: #cd8484;
   content: url("../img/hem.png")
 }
+a.btn1:after {
 
-i.btn2 {
+  background: url("../img/hem.png") no-repeat center;
+  background-color: #cd8484;
+}
+
+a.btn2 {
 	background-color: #ec9f83;
-  content: url("../img/basket.png")
+  content: url("../img/basket.png");
 }
-
-i.btn3 {
+a.btn2:after {
+  background: url("../img/basket.png") no-repeat center;
+  background-color: #ec9f83;
+}
+a.btn3 {
 	background-color: #8897b9;
-  content: url("../img/om.png")
+  content: url("../img/om.png");
 }
 
-i.btn4 {
+a.btn4 {
 	background-color: #88b999;
-  content: url("../img/search.png")
+  content: url("../img/search.png");
 }
 
-i.btn5 {
+a.btn5 {
 	background-color: #d59acb;
-  content: url("../img/@.png")
+  content: url("../img/@.png");
 }
 
 /*#af88b9; #88b2b9; #cdb274;*/
 
-i.material-icons:hover{
+a.material-icons:hover{
   transform: rotate(0deg);
 	box-shadow: none;
 }
 
-i.btn1:hover{
+a.btn1:hover{
 	background-color: #f6c6ca;
 }
 
-i.btn2:hover{
+a.btn1:hover:after{
+	background-color: #f6c6ca;
+}
+
+
+a.btn2:hover{
 	background-color: #f7bba4;
 }
 
-i.btn3:hover{
+a.btn3:hover{
 	background-color: #b9caed;
 }
 
-i.btn4:hover{
+a.btn4:hover{
 	background-color: #c0deca;
 }
 
-i.btn5:hover{
+a.btn5:hover{
 	background-color: #fad1f3;
 }
 
-i.material-icons {
+a.material-icons {
+		padding: 20px;
+		margin: 10px;
+}
+a.material-icons:after {
 		padding: 20px;
 		margin: 10px;
 }
