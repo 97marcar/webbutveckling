@@ -5,6 +5,7 @@ body footer div {
 .logo{
   width: 50%;
   max-width: 500px;
+  margin-bottom: 30px;
 }
 body {
 	font-size: 1rem;
@@ -13,9 +14,28 @@ body {
 	text-align: center;
 }
 
+.enter{
+  border: 1px solid black;
+  padding: 10px 30px;
+  background-color: #b9caed;
+  color: black;
+}
+
+.enter:hover{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.book {
+  margin-top: 5px;
+}
+
 h1 {
 	font-weight: 100;
 	color: #777;
+}
+footer {
+  margin-top: 30px;
 }
 
 a.material-icons:after {
@@ -26,10 +46,9 @@ a.material-icons:after {
 		transition: all 0.3s ease;
 }
 
-
 a.material-icons {
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+		transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
 }
 
 a.material-icons:after {
@@ -50,8 +69,8 @@ a.btn1 {
 	background-color: #cd8484;
   content: url("../img/hem.png")
 }
-a.btn1:after {
 
+a.btn1:after {
   background: url("../img/hem.png") no-repeat center;
   background-color: #cd8484;
 }
@@ -59,10 +78,6 @@ a.btn1:after {
 a.btn2 {
 	background-color: #ec9f83;
   content: url("../img/basket.png");
-}
-a.btn2:after {
-  background: url("../img/basket.png") no-repeat center;
-  background-color: #ec9f83;
 }
 a.btn3 {
 	background-color: #8897b9;
@@ -88,27 +103,27 @@ a.material-icons:hover{
 
 a.btn1:hover{
 	background-color: #f6c6ca;
+  cursor: pointer;
 }
-
-a.btn1:hover:after{
-	background-color: #f6c6ca;
-}
-
 
 a.btn2:hover{
 	background-color: #f7bba4;
+  cursor: pointer;
 }
 
 a.btn3:hover{
 	background-color: #b9caed;
+  cursor: pointer;
 }
 
 a.btn4:hover{
 	background-color: #c0deca;
+  cursor: pointer;
 }
 
 a.btn5:hover{
 	background-color: #fad1f3;
+  cursor: pointer;
 }
 
 a.material-icons {
