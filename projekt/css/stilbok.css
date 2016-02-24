@@ -3,10 +3,9 @@ body footer div {
 }
 
 .logo{
-  width: 50%;
+  width: 150px;
   max-width: 500px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  position: relative;
 }
 body {
 	font-size: 1rem;
@@ -15,6 +14,17 @@ body {
 	text-align: center;
 }
 
+.title {
+  font-size: 500%;
+}
+
+.boktext {
+  padding: 30px;
+  padding-left: 370px;
+  font-size: 100%;
+}
+
+
 
 .enter:hover{
   cursor: pointer;
@@ -22,7 +32,8 @@ body {
 }
 
 .book {
-  margin-top: 5px;
+  margin: 20px;
+  width: 100%
 }
 
 h1 {
@@ -58,7 +69,10 @@ a.material-icons:hover:after {
 	box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
 }
 
-
+a.btn0{
+  margin-right: 10px;
+  content: url("../img/logo.png")
+}
 
 a.btn1 {
 	background-color: #cd8484;
@@ -131,60 +145,36 @@ a.material-icons:after {
 		margin: 10px;
 }
 
-
-html, body{
-  height: 100%;
-}
-
-
-svg {
-    display: block;
-    font: 10.5em 'American Type Writer';
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding-bottom: 70px;
-}
-
-.text-copy {
-    fill: none;
-    stroke: white;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 5px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 5.5s infinite linear;
-}
-
-.text-copy:nth-child(1){
-	stroke: #cd8484;
-	animation-delay: -1;
-}
-
-.text-copy:nth-child(2){
-	stroke: #ec9f83;
-	animation-delay: -2s;
-}
-
-.text-copy:nth-child(3){
-	stroke: #8897b9;
-	animation-delay: -3s;
-}
-
-.text-copy:nth-child(4){
-	stroke: #88b999;
-	animation-delay: -4s;
-}
-
-.text-copy:nth-child(5){
-	stroke: #d59acb;
-	animation-delay: -5s;
-}
-
-@keyframes stroke-offset{
-	100% {stroke-dashoffset: -35%;}
-}
 h3 a:hover{
   text-decoration: none;
 }
 
+@media screen and (max-width: 767px) {
+  .boktext{
+    padding-left: 30px;
+    font-size: 150%;
+  }
+  .book {
+    margin: 20px;
+    width: 80%;
+  }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .title{
+    margin: 15px;
+    font-size: 300%;
+  }
+  .boktext{
+    font-size: 200%;
+  }
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  .boktext{
+    font-size: 150%;
+  }
+
+@media screen and (min-width: 1200px) {
+  .boktext{
+    font-size: 120%;
+    padding-left: 390px;
+  }
 }
