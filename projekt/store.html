@@ -8,6 +8,17 @@
         <link rel="stylesheet" href="css/stil.css" media="screen" title="bootstrap" charset="utf-8">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <script type="text/javascript" src="simpleCart.js"></script>
+        <script src="simpleCart.js"></script>
+        <script>
+            simpleCart({
+                checkout: {
+                    type: "PayPal" ,
+                    email: "you@yours.com"
+                }
+            });
+        </script>
+
     </head>
     <body>
 
@@ -18,6 +29,8 @@
             <a class="material-icons btn4"></a><!--Search-->
             <a class="material-icons btn3"></a><!--Info-->
             <a class="material-icons btn5"></a><!--Contact-->
+            <br>
+            <span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
         </div>
       </div>
       <div class="">
@@ -37,18 +50,19 @@
                         <h3><a href="book.html">The Blue Book</a></h3>
                         <p>The reading experiance is awesome!</p>
                         <p><a href="#" class="btn btn-primary" role="button">Buy Now!</a>
-                          <a href="#" class="btn btn-default" role="button">Add to basket</a></p>
+                          <a href="#" class="btn btn-default" role="button">$10.99</a></p>
                       </div>
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-4 col-xs-12">
                     <div class="thumbnail">
                       <img class="book" src="img/book2.png">
-                      <div class="caption">
-                        <h3><a href="book.html">The Red Book</a></h3>
+                      <div class="caption simpleCart_shelfItem">
+                        <h3><a href="book.html item_name">The Red Book</a></h3>
                         <p>Now redder than ever!</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Buy Now!</a>
-                          <a href="#" class="btn btn-default" role="button">Add to basket</a></p>
+                        <span class="item_price">$35.99</span>
+                        <p><a href="javascript:;" class="btn btn-primary simpleCart_checkout" role="button">Buy Now!</a>
+                          <a href="javascript:;" class="btn btn-default item_add" role="button">Add to cart</a></p>
                       </div>
                     </div>
                   </div>
@@ -59,7 +73,7 @@
                         <h3><a href="book.html">The Green Book</a></h3>
                         <p>The extreme green book of green!</p>
                         <p><a href="#" class="btn btn-primary" role="button">Buy Now!</a>
-                          <a href="#" class="btn btn-default" role="button">Add to basket</a></p>
+                          <a href="#" class="btn btn-default" role="button">$10.99</a></p>
                       </div>
                     </div>
                   </div>

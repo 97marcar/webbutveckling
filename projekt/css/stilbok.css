@@ -148,30 +148,6 @@ a.material-icons:after {
 h3 a:hover{
   text-decoration: none;
 }
-
-@media screen and (max-width: 767px) {
-  .boktext{
-    padding-left: 30px;
-    font-size: 150%;
-  }
-  .book {
-    margin: 20px;
-    width: 80%;
-  }
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .title{
-    margin: 15px;
-    font-size: 300%;
-  }
-  .boktext{
-    font-size: 200%;
-  }
-@media screen and (min-width: 993px) and (max-width: 1199px) {
-  .boktext{
-    font-size: 150%;
-  }
-
 @media screen and (min-width: 1200px) {
   .boktext{
     font-size: 120%;

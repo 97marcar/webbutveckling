@@ -124,10 +124,10 @@ a.material-icons:after {
 }
 
 .enter {
-  padding: 15px;
+  padding: 15px 100px 15px 100px;
   border: 2px solid black;
+  font-size: 20px;
 }
-
-a:hover {
-  text-decoration: none;
+.enterbox {
+  padding: 20px;
 }
