@@ -42,12 +42,10 @@ a.material-icons:after {
 }
 
 a.material-icons {
-		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 		transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
 }
 
 a.material-icons:after {
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
 }
 
@@ -55,7 +53,6 @@ a.material-icons:after {
 
 a.material-icons:hover:after {
 	transform: scale(1);
-	box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
 }
 
 
@@ -63,11 +60,6 @@ a.material-icons:hover:after {
 a.btn1 {
 	background-color: #cd8484;
   content: url("../img/hem.png")
-}
-
-a.btn1:after {
-  background: url("../img/hem.png") no-repeat center;
-  background-color: #cd8484;
 }
 
 a.btn2 {
@@ -131,60 +123,11 @@ a.material-icons:after {
 		margin: 10px;
 }
 
-
-html, body{
-  height: 100%;
+.enter {
+  padding: 15px;
+  border: 2px solid black;
 }
 
-
-svg {
-    display: block;
-    font: 10.5em 'American Type Writer';
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding-bottom: 70px;
-}
-
-.text-copy {
-    fill: none;
-    stroke: white;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 5px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 5.5s infinite linear;
-}
-
-.text-copy:nth-child(1){
-	stroke: #cd8484;
-	animation-delay: -1;
-}
-
-.text-copy:nth-child(2){
-	stroke: #ec9f83;
-	animation-delay: -2s;
-}
-
-.text-copy:nth-child(3){
-	stroke: #8897b9;
-	animation-delay: -3s;
-}
-
-.text-copy:nth-child(4){
-	stroke: #88b999;
-	animation-delay: -4s;
-}
-
-.text-copy:nth-child(5){
-	stroke: #d59acb;
-	animation-delay: -5s;
-}
-
-@keyframes stroke-offset{
-	100% {stroke-dashoffset: -35%;}
-}
-h3 a:hover{
+a:hover {
   text-decoration: none;
-}
-
 }
