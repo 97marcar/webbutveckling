@@ -1,7 +1,15 @@
 div {
   font-family: "American Typewriter", "Times New Roman", Verdana;
 }
-
+.bookpic{
+  float:left;
+}
+div.thumbnail p a.boktextcart{
+  float: left;
+}
+.test{
+  float: left;
+}
 
 @media only screen and (min-width: 768px) {
   .thumbnail{
@@ -18,7 +26,7 @@ div {
   .book {
     margin: 20px;
     width: 80%;
-  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .title{
@@ -27,8 +35,8 @@ div {
   }
   .boktext{
     font-size: 200%;
-  }
+}
 @media screen and (min-width: 993px) and (max-width: 1199px) {
   .boktext{
     font-size: 150%;
-  }
+}
