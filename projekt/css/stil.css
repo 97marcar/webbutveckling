@@ -8,6 +8,15 @@ body footer div {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+.logoStore{
+  width: 30%;
+  max-width: 500px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
 body {
 	font-size: 1rem;
 	background-color: #ebebeb;
